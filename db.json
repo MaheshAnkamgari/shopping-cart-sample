@@ -1,0 +1,75 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Blue Flower",
+      "price": 80,
+      "rating": 4,
+      "assertName": ""
+    },
+    {
+      "id": 2,
+      "name": "Orange Flower",
+      "price": 17.6,
+      "rating": 5,
+      "assertName": ""
+    },
+    {
+      "id": 3,
+      "name": "Pink Flower",
+      "price": 40,
+      "rating": 2,
+      "assertName": ""
+    },
+    {
+      "id": 4,
+      "name": "Red Rose Flower",
+      "price": 90,
+      "rating": 5,
+      "assertName": ""
+    },
+    {
+      "id": 5,
+      "name": "Lily Flower",
+      "price": 15,
+      "rating": 3,
+      "assertName": ""
+    },
+    {
+      "id": 6,
+      "name": "Blue Flower",
+      "price": 80,
+      "rating": 4,
+      "assertName": ""
+    },
+    {
+      "id": 7,
+      "name": "Orange Flower",
+      "price": 17.6,
+      "rating": 3,
+      "assertName": ""
+    },
+    {
+      "id": 8,
+      "name": "Pink Flower",
+      "price": 40,
+      "rating": 5,
+      "assertName": ""
+    },
+    {
+      "id": 9,
+      "name": "Red Rose Flower",
+      "price": 90,
+      "rating": 5,
+      "assertName": ""
+    },
+    {
+      "id": 10,
+      "name": "Lily Flower",
+      "price": 15,
+      "rating": 3,
+      "assertName": ""
+    }
+  ],
+  "cart": []
+}

@@ -1,0 +1,12 @@
+.container {
+  width: 80vw;
+  margin: auto;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  .card {
+    flex: 0 0 32%;
+  }
+}
