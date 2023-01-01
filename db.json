@@ -2,74 +2,89 @@
   "products": [
     {
       "id": 1,
-      "name": "Blue Flower",
+      "name": "Lotus Flower",
       "price": 80,
       "rating": 4,
-      "assertName": ""
+      "assertName": "lotus"
     },
     {
       "id": 2,
       "name": "Orange Flower",
       "price": 17.6,
       "rating": 5,
-      "assertName": ""
+      "assertName": "orange_flower"
     },
     {
       "id": 3,
-      "name": "Pink Flower",
+      "name": "Yellow Flower",
       "price": 40,
       "rating": 2,
-      "assertName": ""
+      "assertName": "yellow_flower"
     },
     {
       "id": 4,
       "name": "Red Rose Flower",
       "price": 90,
       "rating": 5,
-      "assertName": ""
+      "assertName": "red_rose"
     },
     {
       "id": 5,
       "name": "Lily Flower",
       "price": 15,
       "rating": 3,
-      "assertName": ""
+      "assertName": "lilly"
     },
     {
       "id": 6,
-      "name": "Blue Flower",
+      "name": "Blue Rose Flower",
       "price": 80,
       "rating": 4,
-      "assertName": ""
+      "assertName": "blue_rose"
     },
     {
       "id": 7,
       "name": "Orange Flower",
       "price": 17.6,
       "rating": 3,
-      "assertName": ""
+      "assertName": "orange_flower"
     },
     {
       "id": 8,
-      "name": "Pink Flower",
+      "name": "Blue Rose Flower",
       "price": 40,
       "rating": 5,
-      "assertName": ""
+      "assertName": "blue_flower"
     },
     {
       "id": 9,
       "name": "Red Rose Flower",
       "price": 90,
       "rating": 5,
-      "assertName": ""
+      "assertName": "red_rose"
     },
     {
       "id": 10,
       "name": "Lily Flower",
       "price": 15,
       "rating": 3,
-      "assertName": ""
+      "assertName": "lilly"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 2,
+      "name": "Orange Flower",
+      "price": 17.6,
+      "rating": 5,
+      "assertName": "orange_flower"
+    },
+    {
+      "id": 3,
+      "name": "Yellow Flower",
+      "price": 40,
+      "rating": 2,
+      "assertName": "yellow_flower"
+    }
+  ]
 }

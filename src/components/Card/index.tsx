@@ -1,5 +1,7 @@
+import { relative } from "path";
 import React, { useState } from "react";
 import rose from "../../assets/blue_rose.jpg";
+// const images = require.context('./../assets', true);
 
 import "./index.scss";
 interface Icard {
@@ -24,12 +26,19 @@ const Card = (props: Icard) => {
   return (
     <div className="card" key={product.id}>
       <div
-        style={{ padding: "5%", width: "90%", position: "relative" }}
+        style={{
+          padding: "5%",
+          width: "90%",
+          position: "relative",
+          display: "flex",
+          height: "63%",
+        }}
         onMouseOver={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >
         <img
-          src={rose}
+          // src={"../../public/assets/blue_rose.jpg"}
+          src={`../../assets/${product.assertName}.jpg`}
           alt="Avatar"
           style={{ width: "100%", opacity: hover ? 0.5 : 1 }}
         />
@@ -41,12 +50,16 @@ const Card = (props: Icard) => {
               left: 1,
               width: "50px",
               height: "50px",
-              borderRadius: 25,
+              borderRadius: 100,
               textAlign: "center",
-              background: "orange",
+              background: "#FF583E",
+              padding: 10,
+              color: "white",
             }}
           >
-            <div style={{ marginTop: 10 }}>In cart</div>
+            <div style={{ marginTop: 10, position: "relative", top: 3 }}>
+              In cart
+            </div>
           </div>
         )}
         {hover && (
@@ -62,20 +75,39 @@ const Card = (props: Icard) => {
             }}
           >
             {!cartItem ? (
-              <button onClick={() => props.onAddToCart(product)}>
+              <button
+                onClick={() => props.onAddToCart(product)}
+                style={{
+                  height: 30,
+                  width: "25%",
+                  backgroundColor: "#35CB7C",
+                  border: "none",
+                  color: "#FFFFFF",
+                }}
+              >
                 Add to Cart
               </button>
             ) : (
-              <button onClick={() => props.removeFromCart(product)}>
+              <button
+                onClick={() => props.removeFromCart(product)}
+                style={{
+                  height: 30,
+                  width: "40%",
+                  backgroundColor: "#35CB7C",
+                  border: "none",
+                  color: "#FFFFFF",
+                }}
+              >
                 Remove from cart
               </button>
             )}
           </div>
         )}
       </div>
+      <hr style={{ width: "90%", opacity: "0.5" }} />
       <div className="card-container">
-        <h2>{product.name}</h2>
-        <h5> ${product.price}</h5>
+        <h2 style={{ position: "relative", bottom: 10 }}>{product.name}</h2>
+        <p style={{ position: "relative", bottom: 25 }}> ${product.price}</p>
         <div>
           <StarRating
             {...product}
@@ -104,7 +136,7 @@ const StarRating = (props: IStarRating) => {
     });
   };
   return (
-    <div className="star-rating">
+    <div className="star-rating" style={{ position: "relative", bottom: 40 }}>
       {[...Array(5)].map((star, index) => {
         index += 1;
         return (
