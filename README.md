@@ -1,15 +1,30 @@
-# Getting Started with Create React App
+# Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Vention Test Application! Our application is designed to add and remove items from the cart. This project is very easy to use. 
+
+# Features
+
+- Add items to the cart
+- Remove items from the cart
+- Items ratings can be viewed on the card 
+
+# Tech Stack
+
+- The website is built using React and TypeScript
+- Utilized Axios library for making HTTP requests
+
 
 ## Available Scripts
 
-In the project directory, you can run:
+To start the development server, run the following command in the project directory:
 
-### `npm start`
+### `npm run dev`
+Above command runs "npm start"  and "npm mock-server".
 
-Runs the app in the development mode.\
+"npm star" runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+"npm mock-server" runs Json-mock-server on 3001 port
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
